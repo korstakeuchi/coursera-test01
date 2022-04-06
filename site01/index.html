@@ -7,13 +7,21 @@
 
 	<body>
 		<header>
-			Coursera is so cool. I am learning so much!
+			I have to keep learning!!!
 		</header>
 
 
 
-		<h1>General Applied Lessons</h1>
+		<h1 id="top"
+			style="color: green;">
+			General Applied Lessons
+		</h1>
 
+		<img 	src="metaldirty.jpeg" 
+				width="600" 
+				height="400" 
+				alt="Picture of a dirty metal">
+		
 		<header>
 			Header element - Some header information goes here. Usually consists of company logo, some tag line, etc. Sometimes, navigation is contained in the header as well.
 			<nav>
@@ -23,8 +31,13 @@
 
 
 
-		<h2>Div and Span Elements</h2>
+		<h2 style="color: red;">Div and Span Elements</h2>
 
+		<img 	src="https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg" 
+				width="400" 
+				height="200"
+				alt="Elephant">
+		
 		<div>DIV 1: Some content here</div>
 		<div>DIV 2: Following right after div 1</div>
 		<span 	onclick="alert('EMAILING US IS USELESS')">
@@ -38,11 +51,11 @@
 
 
 
-		<h2>Sections, Articles, and Aside</h2>
+		<h2 style="color: red;">Sections, Articles, and Aside</h2>
 
 		<section>
 			<h3>Section 1</h3>
-			<article>
+			<article	id="article1">
 				<h4>Article 1</h4>
 				<p>Place article here!!!</p>
 			</article>
@@ -56,7 +69,7 @@
 			</article>
 		</section>
 		<p></p>
-		<section>
+		<section 	id="section2">
 			<h3>Section 2</h3>
 			<article>
 				<h4>Article 4</h4>
@@ -78,7 +91,7 @@
 
 
 
-		<h2>Lists</h2>
+		<h2 style="color: red;">Lists</h2>
 		<h3>Unordered Lists</h3>
 
 		<div>My typical dinner shopping list:</div>
@@ -113,9 +126,89 @@
 
 
 
-		<footer 	style="text-align: center;">
+		<h2 style="color: red;">Character Entity References</h2>
+
+		<div>Instead of using "<", use &lt;.</div>
+		<div>Instead of using ">", use &gt;</div>
+		<div>Instead of using "&", use &amp;</div>
+		<p>All of this will make sense in the source code</p>
+
+		<h3>Don't be afraid to be <then a 100% success & > more:</h3>
+		<h3>Don't be afraid to be &lt; then a 100% success &amp; &gt; more:</h3>
+
+		<p>
+			"it is not the critic <span style="margin-left: 2ch;">who</span> counts; not the man who points out how the strong man stumbles, 
+			or where the doer of deeds could have done them better. The credit belongs to the man who is actually in the arena, 
+			whose face is marred by dust and sweat and blood; who strives valiantly; who errs, who comes short again and again, 
+			because there is no <span style="margin: 2ch;">effort</span> without error and shortcoming; but who does actually strive to do the deeds; 
+			who knows great enthusiasms, the great devotions; who spends himself in a worthy cause; 
+			who at the best knows in the end the triumph of high achievement, and who at the worst, if he fails, 
+			at least fails while daring greatly, so that his place shall never be with those cold and timid souls who nether 
+			know victory&nbsp;nor&nbsp;defeat."
+		</p>
+		<div>Lists of some Character Entity References currently presented:</div>
+		<ul>
+			<li>&lt; < less than</li>
+			<li>&gt; > greter than</li>
+			<li>&amp; &</li>
+			<li>&copy; copyright logo</li>
+			<li>&nbsp; non-breaking space</li>
+			<li>&quot; "" quotation mark</li>
+		</ul>
+
+
+
+		<h2 style="color: red;">  Creating Links  </h2>
+		<h3 id="internal_links">  Internal Links  </h3>
+
+		<section>
+			We can link to a file in the same directory as this HTML file like this:
+			<a 	href="extra-site00.html" 
+				title="same dir link">
+				Linking to a file in the same directory
+			</a>
+			<a 	href="extra-site00.html" 
+				title="same dir link">
+				<div>
+					DIV Linking to a file in the same directory
+				</div>
+			</a>
+		</section>
+
+		<h3 id="external_links">  External Links  </h3>
+
+		<section>
+			<p>
+				Let's link to an itch.io page for some examples!
+				<!-- Link to itch.io page WITH TARGET-->
+				<a 	href="https://itch.io/" 
+					target="_blank" 
+					title="Make Games on Itch">
+					itch.io Page
+				</a>
+			</p>
+		</section>
+
+		<h3> Links to Sections of The Same Page  </h3>
+		
+		<section>
+			<ul>
+				<!-- Link to ecery section in the page-->
+				<li><a href="#article1">article1</a></li>
+				<li><a href="#section2">section2</a></li>
+				<li><a href="#footer">footer</a></li>
+			</ul>
+		</section>
+
+
+
+		<footer style="text-align: center;">
 			<hr>
-			<span>JHU Copyright 2015</span>
+			<h3><a name="footer"> Footer </a></h3>
+			<div><a href="#top"> Back to Top </a></div>
+			<span>JHU &copy; Copyright 2015</span>
 		</footer>
+
+
 	</body>
 </html>
