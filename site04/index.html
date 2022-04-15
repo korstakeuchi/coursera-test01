@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta   charset="utf-8">
+    <title>Test04</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        a:link, a:visited {
+            /* For Links */
+            text-decoration: none; /*removes underline*/
+            background-color: green;
+            border: 1px solid blue;
+            color: black; /*color of the text*/
+            display: block; /*changes into a blockline text*/
+            width: 200px; /*changes width of the block*/
+            text-align: center; /*centers text within the resized block*/
+            margin-bottom: 2px;
+        }
+        a:hover, a:active {
+            background-color: red;
+            color: purple;
+            font-size: large;
+            font-weight: bold;
+        }
+        header.linksLists li:nth-child(2) {
+            font-size: 24px;
+        }
+        section div:nth-child(odd) {
+            background-color: gray;
+        }
+        section div:nth-child(4):hover {
+            background-color: green;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo-Class Selectors</h1> 
+
+
+    <header>
+        <div>Pseudo-Class Selectors</div>
+        <ul>
+            <li>:link</li>
+            <li>:visited</li>
+            <li>:hover</li>
+            <li>:active</li>
+            <li>:nth-child(...)</li>
+        </ul>
+    </header>
+
+
+
+    <h2>Examples of Pseudo-Class Selectors</h2>
+
+    <header class="linksLists">
+        <ul>
+            <li><a  href="/">Home</a></li>
+            <li><a  href="https://itch.io/"
+                    target="_blank">
+                Itch.io Page</a></li>
+            <li><a  href="https://www.coursera.org/"
+                    target="_blank">
+                Coursera Page</a></li>
+        </ul>
+    </header>
+    <section>
+        <div>DIV 1</div>
+        <div>DIV 2</div>
+        <div>DIV 3</div>
+        <div>DIV 4</div>
+        <div>DIV 5</div>
+        <div>DIV 6</div>
+        <div>DIV 7</div>
+        <div>DIV 8</div>
+        <div>DIV 9</div>
+        <div>DIV 10</div>
+        <div>DIV 11</div>
+        <div>DIV 12</div>
+        <div>DIV 13</div>
+        <div>DIV 14</div>
+        <div>DIV 15</div>
+        <div>DIV 16</div>
+        <div>DIV 17</div>
+        <div>DIV 18</div>
+        <div>DIV 19</div>
+        <div>DIV 20</div>
+    </section>
+    
+</body>
+
+</html>

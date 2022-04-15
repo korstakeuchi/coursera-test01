@@ -9,7 +9,6 @@
 			color: red;
 			text-align: center;
 		}
-
 		.highlight {
 			font-size: 20px;
 			font-weight: bold;
@@ -17,21 +16,34 @@
 			background-color: green;
 			opacity: .6;
 		}
-
 		#mainPoint {
 			font-size: 24px;
 			font-weight: bold;
 			background-color: red;
 			opacity: .7;
 		}
-
 		p, h1 {
 			color: blue;
 			text-align: center;
 		}
 
+
 		p.big {
-			
+			/* Element with Class Selector */
+			font-size: 20px;
+		}
+		article > p {
+			/* Child Selector */
+			color: rgb(174, 220, 24);
+		}
+		article p {
+			/* Descendant Selector */
+			color: teal;
+		}
+		.highlight00.mainpoint00 {
+			/* All elements with class 'highlight' as well as with class 'mainpoint'. */
+			color: red;
+			background-color: black;
 		}
 	</style>
 </head>
@@ -67,11 +79,37 @@
 
 	<h2>Element with Class Selector</h2>
 
-	<p>
-		<span	style="color: red;">
-			p</span><span	style="color: green;">
-				.big</span> {}
+	<h3>p.big {}</h3>
+	<p	class="big">
+		Here's a sample.
 	</p>
+	<div	class="big"
+			style="text-align: center;">
+		class="big" not working
+	</div>
+
+	<h2>Child Selector</h2>
+
+	<h3>article &gt; p {}</h3>
+	<article>
+		<p>Here's an example.</p>
+		<div>
+			<p>it doesn't work when it is inside another selector</p>
+		</div>
+	</article>
+
+	<h2>Descendant Selector</h2>
+
+	<h3>article p {}</h3>
+	<article>
+		<p>Here's an example.</p>
+		<div>
+			<p>it still works even when it is inside another selector</p>
+		</div>
+		<div	class="highlight00 mainpoint00">
+			oh! look at this cool stuff.
+		</div>
+	</article>
 	
 </body>
 
