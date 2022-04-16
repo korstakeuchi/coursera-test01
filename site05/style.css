@@ -1,0 +1,18 @@
+body {
+    background-color: rgb(154, 230, 238);
+    font-size: 130%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    color: maroon;
+}
+h3 {
+    color: rgb(25, 75, 61);
+}
+p, div {
+    text-align: center;
+}
+div.box00 {
+    background-color: gray;
+}
