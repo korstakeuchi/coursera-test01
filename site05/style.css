@@ -16,3 +16,26 @@ p, div {
 div.box00 {
     background-color: gray;
 }
+header.center00 {
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bolder;
+    margin-top: 3%;
+}
+ul.center00 {
+    text-align: center;
+    list-style-type: none;
+    padding: 0%;
+}
+ol.center00 {
+    text-align: center;
+    padding: 0%;
+}
+
+
+
+#center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
