@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Relative & Absolute Element Positioning Part 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1>
+        Relative & Absolute Element Positioning Part 1
+    </h1>
+
+    <header>This is another positioning scheme like the float.</header>
+
+
+
+    <h2>Static Positioning</h2>
+
+    <div    id="part00">
+        <header>
+            Normal document flow.<br>
+            Default for all, except html.
+        </header>
+    </div>
+    <p>Positioning offsets are ignored.</p>
+
+
+
+    <h2>Relative Positioning</h2>
+
+    <div    id="part01">
+        <header>
+            Element is positioned relative to its position in normal document flow.
+        </header>
+    </div>
+    <ul>
+        <li>
+            Positioning CSS (offset) properties are:
+            <ul>
+                <li>top, bottom, left, right</li>
+            </ul>
+        </li>
+        <li>
+            Element is NOT taken out of normal document flow.
+            <ul>
+                <li>
+                    Even if moved, its original spot is preserved.
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <img    src="photos/Screen Shot 2022-04-21 at 12.06.12.png"
+            width="600px"
+            alt="Relative Positioning Pic00">
+    <img    src="photos/Screen Shot 2022-04-21 at 12.08.59.png"
+            width="600px"
+            alt="Relative Positioning Pic01">
+
+
+
+    <h2>Absolute Positioning</h2>
+
+    <div    id="part02">
+        <header>
+            All offsets (top, bottom, left, right) are relative to the
+            position of the nearest ancestor which has positioning set on it,
+            other than static.
+        </header>
+    </div>
+    <ul>
+        <li>
+            By default, html is the only element that has non-static
+            positioning set on it (relative).
+        </li>
+        <li>Element is taken out of normal document flow.</li>
+    </ul>
+    <img    src="photos/absolute_pos00.png"
+            width="600px"
+            alt="Absolute Positioning Pic00">
+    <img    src="photos/absolute_pos01.png"
+            width="600px"
+            alt="Absolute Positioning Pic01">
+    <img    src="photos/absolute_pos02.png"
+            width="600px"
+            alt="Absolute Positioning Pic02">
+    
+
+
+    <h2>Examples</h2>
+
+    <div>
+        <header>
+            <a  href="elementPos_Sample00.html"
+                target="_blank"
+                title="elementPos_Sample00">
+                Element Positioning Sample00
+            </a>
+        </header>
+    </div>
+
+    
+</body>
+</html>
